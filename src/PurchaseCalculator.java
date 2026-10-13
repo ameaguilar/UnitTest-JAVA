@@ -19,6 +19,16 @@ public class PurchaseCalculator {
         } else {
             return subtotal;
         }
-    } // metodo
+    } // metodo para calcular el descuento
+
+    public double calculateFinalPrice (double subtotal) {
+        if (subtotal > 1000) {
+            return subtotal - subtotal * .10;
+        } else {
+            return subtotal;
+        }
+    } // metodo para calcular precio final
+
+
 
 } // class PurchaseCalulator

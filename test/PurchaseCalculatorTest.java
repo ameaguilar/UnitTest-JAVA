@@ -37,6 +37,20 @@ public class PurchaseCalculatorTest {
     void discountProof () {
 
         assertEquals(140, purchaseCalculator.calculateDiscount(140));
+        assertEquals(1000, purchaseCalculator.calculateDiscount(1000));
+        assertEquals(200, purchaseCalculator.calculateDiscount(2000));
+
+    }
+
+    @Test
+    @DisplayName("Prueba método precio final()")
+
+    void finalPriceProof () {
+
+        assertEquals(140, purchaseCalculator.calculateFinalPrice(140));
+        assertEquals(1000, purchaseCalculator.calculateFinalPrice(1000));
+        assertEquals(1800, purchaseCalculator.calculateFinalPrice(2000));
+
     }
 
 
