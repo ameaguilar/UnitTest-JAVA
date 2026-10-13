@@ -10,7 +10,7 @@ public class PurchaseCalculatorTest {
     @Test
     @DisplayName("Prueba método subtotal()")
 
-    void pruebaSubtotal () {
+    void subtotalProof () {
 
         //valor esperado, llamar funcion
         assertEquals(300, purchaseCalculator.subtotal(100,3));
@@ -18,6 +18,27 @@ public class PurchaseCalculatorTest {
         assertEquals(0.0, purchaseCalculator.subtotal(99.9,0));
 
     }
+
+    @Test
+    @DisplayName("Prueba método validación()")
+
+    void isValidProof () {
+
+        assertTrue(purchaseCalculator.isValidPurchase(120,3));
+        assertFalse(purchaseCalculator.isValidPurchase(0,11));
+        assertFalse(purchaseCalculator.isValidPurchase(34.53,0));
+        assertFalse(purchaseCalculator.isValidPurchase(-134,12));
+
+    }
+
+    @Test
+    @DisplayName("Prueba método descuento()")
+
+    void discountProof () {
+
+        assertEquals(140, purchaseCalculator.calculateDiscount(140));
+    }
+
 
 
 } // class PurchaseCalculatorTest
