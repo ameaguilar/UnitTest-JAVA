@@ -4,86 +4,90 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6745160-730f-4809-a23e-336feef903bf" name="Changes" comment="" />
+    <list default="true" id="8d52aa10-0a1d-4e3b-aa59-3e8b84ae4651" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PurchaseCalculator/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PurchaseCalculator/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PurchaseCalculator/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PurchaseCalculator/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PurchaseCalculator/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PurchaseCalculator/PurchaseCalculator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PurchaseCalculator/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PurchaseCalculator/src/PurchaseCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PurchaseCalculator/test/PurchaseCalculatorTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0626837930860881E-4" />
-      <entry key="MS500" value="0.16042830601419392" />
-      <entry key="S2" value="0.6542292830434174" />
-      <entry key="S5" value="1.1471755102354042" />
-      <entry key="S10" value="1.7277125808142033" />
-      <entry key="S30" value="2.915433061788469" />
-      <entry key="S60" value="3.8668550664888284" />
-      <entry key="M2" value="5.652364750339207" />
-      <entry key="M5" value="10.318470678848175" />
-      <entry key="M10" value="17.08145771581333" />
-      <entry key="M15" value="23.777680045212385" />
-      <entry key="M30" value="39.66193583822028" />
-      <entry key="H1" value="55.949907357374464" />
-      <entry key="H2" value="68.0329477742076" />
-      <entry key="H4" value="75.45453832361424" />
-      <entry key="D1" value="82.4901900689665" />
-      <entry key="W1" value="83.78211144402316" />
+      <entry key="MS100" value="5.6526266956419E-15" />
+      <entry key="MS500" value="0.0014140021214644133" />
+      <entry key="S2" value="0.19391549593193186" />
+      <entry key="S5" value="0.5188603582219469" />
+      <entry key="S10" value="0.7228749679123303" />
+      <entry key="S30" value="1.0332078627159562" />
+      <entry key="S60" value="1.3166498878643897" />
+      <entry key="M2" value="1.581204376732796" />
+      <entry key="M5" value="1.8492963087379901" />
+      <entry key="M10" value="2.817753673370695" />
+      <entry key="M15" value="4.73816284146017" />
+      <entry key="M30" value="10.851560724079146" />
+      <entry key="H1" value="17.981015690271114" />
+      <entry key="H2" value="23.513548458729723" />
+      <entry key="H4" value="26.97366611693314" />
+      <entry key="D1" value="30.28580991161861" />
+      <entry key="W1" value="30.896862850558794" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000000026885958" />
-      <entry key="S5" value="1.000373087074579" />
-      <entry key="S10" value="1.0193154660833161" />
-      <entry key="S30" value="1.270068116733377" />
-      <entry key="S60" value="1.5725236024131481" />
-      <entry key="M2" value="2.075130660073241" />
-      <entry key="M5" value="3.1358519503693474" />
-      <entry key="M10" value="4.153006112728516" />
-      <entry key="M15" value="4.869496199227905" />
-      <entry key="M30" value="6.1856255485724905" />
-      <entry key="H1" value="7.3064649398936625" />
-      <entry key="H2" value="8.062808529708317" />
-      <entry key="H4" value="8.505851320871997" />
-      <entry key="D1" value="8.913808666193738" />
-      <entry key="W1" value="8.987589115555515" />
+      <entry key="MS100" value="1.0000000575742918" />
+      <entry key="MS500" value="1.0356488661208882" />
+      <entry key="S2" value="1.4345216602142559" />
+      <entry key="S5" value="1.7164808251866326" />
+      <entry key="S10" value="1.8464521908943254" />
+      <entry key="S30" value="1.9525464615816719" />
+      <entry key="S60" value="2.053827464478874" />
+      <entry key="M2" value="2.2712160629982554" />
+      <entry key="M5" value="2.61493057644648" />
+      <entry key="M10" value="3.059825367675789" />
+      <entry key="M15" value="3.6462682518060476" />
+      <entry key="M30" value="5.252992382217976" />
+      <entry key="H1" value="6.986165711995493" />
+      <entry key="H2" value="8.284128880578733" />
+      <entry key="H4" value="9.082044879619028" />
+      <entry key="D1" value="9.837914002114228" />
+      <entry key="W1" value="9.97661155155358" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.1497933575517312E-4" />
-      <entry key="MS500" value="0.2122025720172762" />
-      <entry key="S2" value="1.1144689844810063" />
-      <entry key="S5" value="1.791169704041715" />
-      <entry key="S10" value="2.469310264484336" />
-      <entry key="S30" value="4.00254719231365" />
-      <entry key="S60" value="5.306253113047379" />
-      <entry key="M2" value="7.627317377238131" />
-      <entry key="M5" value="13.385311974125692" />
-      <entry key="M10" value="21.181174379206414" />
-      <entry key="M15" value="28.598482193131723" />
-      <entry key="M30" value="45.80671571309349" />
-      <entry key="H1" value="63.22729096345113" />
-      <entry key="H2" value="76.07798852486903" />
-      <entry key="H4" value="83.95051421419805" />
-      <entry key="D1" value="91.40219622635772" />
-      <entry key="W1" value="92.7694389518233" />
+      <entry key="MS100" value="2.2937567120110086E-4" />
+      <entry key="MS500" value="0.18917056955326864" />
+      <entry key="S2" value="1.0099987529857153" />
+      <entry key="S5" value="1.8429265113175772" />
+      <entry key="S10" value="2.33365156619171" />
+      <entry key="S30" value="2.887299882595151" />
+      <entry key="S60" value="3.3087940085903496" />
+      <entry key="M2" value="3.812635566051274" />
+      <entry key="M5" value="4.443622101352218" />
+      <entry key="M10" value="5.864259233348931" />
+      <entry key="M15" value="8.373063188818568" />
+      <entry key="M30" value="16.095694489407247" />
+      <entry key="H1" value="24.961123441546736" />
+      <entry key="H2" value="31.794053690772802" />
+      <entry key="H4" value="36.05371865685832" />
+      <entry key="D1" value="40.12336357304374" />
+      <entry key="W1" value="40.873422186382015" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0,
-  "fromUser": false
+  "customColor": "",
+  "associatedIndex": 0
 }]]></component>
-  <component name="ProjectId" id="3KbvaRS75YQCK0Ik6NkUVCCbf4p" />
+  <component name="ProjectId" id="3KcP3cIDO7ATKkCwnESzyUwBzv9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -92,7 +96,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.FuncionesPrueba.executor": "Run",
+    "JUnit.PurchaseCalculatorTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -102,7 +106,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -110,29 +114,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="FuncionesPrueba" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UnitTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FuncionesPrueba" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.FuncionesPrueba" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -143,19 +127,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d6745160-730f-4809-a23e-336feef903bf" name="Changes" comment="" />
-      <created>1791839146956</created>
+      <changelist id="8d52aa10-0a1d-4e3b-aa59-3e8b84ae4651" name="Changes" comment="" />
+      <created>1791853686475</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1791839146956</updated>
+      <updated>1791853686475</updated>
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
