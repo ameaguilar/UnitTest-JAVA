@@ -1,54 +1,67 @@
 # Cálculo de compras y descuentos
 
-Proyecto educativo en Java que modela cálculos básicos de una compra en línea y verifica sus reglas de negocio mediante pruebas unitarias con JUnit 6.
+Proyecto educativo en Java para practicar pruebas unitarias con JUnit Jupiter. La clase `PurchaseCalculator` contiene operaciones sencillas de compra y `PurchaseCalculatorTest` comprueba sus resultados con escenarios representativos.
 
-## Descripción
+## Descripción del programa
 
-El ejercicio representa una parte pequeña del backend de una tienda en línea. A partir del precio de un producto y la cantidad solicitada, se obtiene el subtotal, se valida la compra y se calcula el precio final considerando un posible descuento. Las pruebas unitarias ayudan a comprobar que estas operaciones produzcan los resultados esperados, incluidos los casos límite de la regla de descuento.
+La implementación trabaja con el precio de un producto (`double`), la cantidad (`int`) y el subtotal. Sus métodos son:
 
-## Reglas de negocio
-
-La clase `PurchaseCalculator` contempla las siguientes operaciones:
-
-| Operación | Regla |
+| Método | Comportamiento implementado |
 |---|---|
-| Subtotal | Precio del producto multiplicado por la cantidad. |
-| Validación de compra | La compra es válida cuando el precio y la cantidad son mayores que cero. |
-| Descuento | Se aplica un descuento del 10 % cuando el subtotal es igual o superior a $1,000 MXN; por debajo de ese importe, el descuento es cero. |
-| Precio final | Subtotal menos el descuento que corresponda. |
+| `subtotal(double price, int quantity)` | Multiplica el precio por la cantidad y devuelve el resultado. |
+| `isValidPurchase(double price, int quantity)` | Devuelve `true` cuando tanto el precio como la cantidad son mayores que cero; en otro caso devuelve `false`. |
+| `calculateDiscount(double subtotal)` | Si el subtotal es mayor que 1,000, devuelve el 10 % del subtotal. Para un subtotal de 1,000 o menor, la implementación actual devuelve el subtotal recibido. |
+| `calculateFinalPrice(double subtotal)` | Si el subtotal es mayor que 1,000, devuelve el subtotal menos el 10 %. En los demás casos devuelve el subtotal sin cambios. |
 
-Para mantener el alcance introductorio, los importes se expresan en pesos mexicanos y se representan con `double`. No se realiza redondeo monetario. En aplicaciones financieras o comerciales reales, debe evaluarse el uso de `BigDecimal` y definirse explícitamente la política de redondeo.
+Los importes del ejercicio se entienden como pesos mexicanos. La implementación usa `double` y no aplica redondeo monetario.
 
 ## Pruebas unitarias
 
-La suite `PurchaseCalculatorTest` verifica de manera independiente las operaciones de cálculo y validación. Los escenarios incluyen cantidades unitarias, valores cero y negativos para la validación, subtotales por debajo, en y por encima del umbral de $1,000 MXN, así como precios finales con y sin descuento.
+`PurchaseCalculatorTest` contiene cuatro métodos de prueba y trece aserciones:
 
-Las comparaciones numéricas con valores `double` consideran una tolerancia. La prueba del subtotal exactamente igual a $1,000 MXN es especialmente relevante porque confirma que el límite de la promoción está incluido.
+- `subtotalProof`: comprueba precio por cantidad, cantidad unitaria y cantidad cero.
+- `isValidProof`: comprueba valores positivos, precio cero, cantidad cero y precio negativo.
+- `discountProof`: revisa subtotales de 140, 1,000 y 2,000.
+- `finalPriceProof`: revisa precios finales para subtotales de 140, 1,000 y 2,000.
 
-## Tecnologías y entorno
+### Anotaciones de JUnit
 
-- Java 17 o superior.
-- JUnit 6 para las pruebas unitarias.
-- IntelliJ IDEA y su sistema de compilación integrado.
-- El proyecto no utiliza Maven ni Gradle.
+`@Test` identifica cada método como una prueba que JUnit debe ejecutar. Sin esta anotación, el motor de JUnit no lo trata como un caso de prueba al descubrir la suite.
 
-## Estructura del proyecto
+`@DisplayName` asigna un nombre legible a la prueba en los resultados del IDE o del motor de JUnit. En este proyecto los nombres, como “Prueba método subtotal()”, permiten reconocer qué operación se está verificando. La anotación solo afecta la presentación; no cambia el resultado ni el comportamiento del método probado.
 
-Los archivos principales del ejercicio son:
+### Importaciones de la clase de pruebas
+
+- `org.junit.jupiter.api.Test`: proporciona la anotación `@Test` de la API Jupiter.
+- `org.junit.jupiter.api.DisplayName`: proporciona la anotación `@DisplayName`.
+- `org.junit.jupiter.api.Assertions.*` con `static import`: permite llamar directamente a `assertEquals`, `assertTrue` y `assertFalse`, en vez de escribir `Assertions.assertEquals(...)`. El asterisco importa los miembros estáticos disponibles de esa clase; las pruebas usan las tres aserciones mencionadas.
+
+`PurchaseCalculator` no declara importaciones porque usa únicamente tipos de `java.lang` (disponibles automáticamente) y no depende de otras clases externas.
+
+## Nota sobre la regla del descuento
+
+El archivo de instrucciones describe un descuento de 10 % cuando el subtotal es igual o superior a 1,000, y descuento cero por debajo de ese límite. El código actual no coincide completamente con esa regla: usa `subtotal > 1000`, por lo que no descuenta cuando el subtotal es exactamente 1,000; además, `calculateDiscount` devuelve el subtotal completo para importes menores o iguales al límite, en vez de devolver cero. Las aserciones actuales de `discountProof` esperan ese comportamiento y por ello no detectan esas diferencias. Esta sección describe lo que hace el código disponible, para que el README no presente como implementada una regla distinta.
+
+## Estructura del repositorio
 
 ```text
-PurchaseCalculator.java       # Reglas de cálculo de compras
-PurchaseCalculatorTest.java  # Pruebas unitarias
-DOCUMENTACION.md              # Descripción técnica y resultados de las pruebas
-.gitignore                    # Exclusiones de archivos locales y generados
+src/
+└── PurchaseCalculator.java
+test/
+└── PurchaseCalculatorTest.java
+.gitignore
 ```
 
-Las rutas concretas de código fuente y pruebas dependen de la organización del proyecto configurada en IntelliJ IDEA.
+El proyecto está configurado en IntelliJ IDEA y utiliza su sistema de compilación integrado, sin Maven ni Gradle. La dependencia de JUnit se administra desde la configuración del IDE.
 
-## Alcance
+## Entorno
 
-El proyecto se limita a la lógica de cálculo y sus pruebas. No incluye una tienda completa, interfaz de usuario, persistencia, bases de datos ni gestión de catálogo. La documentación detallada de la implementación y de los resultados de ejecución se presenta en `DOCUMENTACION.md`.
+- Java 17 o superior.
+- JUnit Jupiter (API de JUnit 6, según la configuración del proyecto).
+- IntelliJ IDEA.
 
-## Estado de las pruebas
+## Consideraciones
 
-Los resultados de ejecución deben corresponder a una ejecución real de la suite en el entorno del proyecto y se registran en `DOCUMENTACION.md`.
+Los métodos de descuento reciben directamente el subtotal; no validan precios negativos ni cantidades. La validación de la compra se realiza por separado mediante `isValidPurchase`. Las comparaciones de los resultados `double` en las pruebas no especifican tolerancia; para cálculos decimales más generales conviene usar una tolerancia apropiada. En aplicaciones reales de dinero también se debe considerar `BigDecimal` y una política explícita de redondeo.
+
+Este README se basa en el código y las pruebas disponibles. Los resultados de ejecución no se reportan aquí porque deben tomarse de una ejecución real de JUnit.
